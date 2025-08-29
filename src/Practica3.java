@@ -25,10 +25,12 @@ public class Practica3 {
         double pago = 0.0;
         if (metodopago == 1) {
             pago = 1.0;
-        } else if (opcion == 2) {
+        } else if (metodopago == 2) {
             pago = 1.05;
         } else {
             System.out.println("Opción no válida\n");
+            return; // Salir del programa si el método de pago no es válido
+
         }
 
         switch (opcion) {
@@ -44,7 +46,7 @@ public class Practica3 {
                 System.out.println("\nAño de estreno: " + estreno1 + "\n");
                 System.out.println("\nDuración: " + duracion1 + " minutos \n");
                 System.out.println("\nCalificación: " + calificacion1 + "estrella\n");
-                System.out.println("\nClasificaicón: " + clasificacion1 + "\n");
+                System.out.println("\nClasificación: " + clasificacion1 + "\n");
                 System.out.println("\n" + disponibilidad + "\n");
                 int descuento = 2025 - estreno1;
                 double precioFinal = 0.0;
@@ -54,6 +56,7 @@ public class Practica3 {
                 } else {
                     precioFinal = precioRenta1 * pago;
                     System.out.println("\nPrecio de renta: $" + precioFinal + "\n");
+                }
                 if (edadUsuario >= 18) {
                     System.out.println("Disfruta la película\n");
                 } else {
@@ -75,9 +78,9 @@ public class Practica3 {
                 System.out.println("\nTítulo: " + pelicula2 + "\n");
                 System.out.println("\nAño de estreno: " + estreno2 + "\n");
                 System.out.println("\nDuración: " + duracion2 + " minutos \n");
-                System.out.println("\nCalificación: " + calificacion2 + "estrella\n");
+                System.out.println("\nCalificación: " + calificacion2 + "estrellas\n");
                 System.out.println("\n" + disponibilidad2 + "\n");
-                System.out.println("\nClasificaicón: " + clasificacion2 + "\n");
+                System.out.println("\nClasificación: " + clasificacion2 + "\n");
                 int descuento2 = 2025 - estreno2;
                 double precioFinal2 = 0.0;
                 if (descuento2 >= 10) {
@@ -86,7 +89,7 @@ public class Practica3 {
                 } else {
                     precioFinal2 = precioRenta2 * pago;
                     System.out.println("\nPrecio de renta: $" + precioFinal2 + "\n");
-                System.out.println("\nCalificación: " + calificacion2 + " estrellas\n");
+                }
                 if (edadUsuario >= 13) {
                     System.out.println("Disfruta la película\n");
                 } else {
@@ -97,7 +100,7 @@ public class Practica3 {
 
                 break;
             case 3:
-                String pelicula3 = "Sherk";
+                String pelicula3 = "Shrek";
                 int estreno3 = 2005;
                 int duracion3 = 110;
                 double precioRenta3 = 200.0;
@@ -110,7 +113,7 @@ public class Practica3 {
                 System.out.println("\nDuración: " + duracion3 + " minutos \n");
                 System.out.println("\nCalificación: " + calificacion3 + "estrella\n");
                 System.out.println("\n" + disponibilidad3 + "\n");
-                System.out.println("\nClasificaicón: " + clasificacion3 + "\n");
+                System.out.println("\nClasificación: " + clasificacion3 + "\n");
                 int descuento3 = 2025 - estreno3;
                 double precioFinal3 = 0.0;
                 if (descuento3 >= 10) {
@@ -119,18 +122,18 @@ public class Practica3 {
                 } else {
                     precioFinal3 = precioRenta3 * pago;
                     System.out.println("\nPrecio de renta: $" + precioFinal3 + "\n");
-                if (edadUsuario >= 0) {
-                    System.out.println("Disfruta la película\n");
-                } else {
-                    System.out.println("\nNo tienes la edad suficiente para ver esta película");
-                    int c = 0 - edadUsuario;
-                    System.out.println("Podras rentarla en " + c + " años\n");
                 }
+                System.out.println("Disfruta la película\n");
+            
                 break;
 
         
             default: System.out.println("Opción no válida\n");
                 break;
+            }
+        scanner.close();
         }
+      
     }
-}
+
+
