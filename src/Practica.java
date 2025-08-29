@@ -45,7 +45,7 @@ public class Practica {
                 System.out.println("\nTítulo: " + pelicula1 + "\n");
                 System.out.println("\nAño de estreno: " + estreno1 + "\n");
                 System.out.println("\nDuración: " + duracion1 + " minutos \n");
-                System.out.println("\nCalificación: " + calificacion1 + " estrella\n");
+                System.out.println("\nCalificación: " + calificacion1 + "estrella\n");
                 System.out.println("\nClasificación: " + clasificacion1 + "\n");
                 System.out.println("\n" + disponibilidad + "\n");
                 int descuento = 2025 - estreno1;
@@ -78,7 +78,7 @@ public class Practica {
                 System.out.println("\nTítulo: " + pelicula2 + "\n");
                 System.out.println("\nAño de estreno: " + estreno2 + "\n");
                 System.out.println("\nDuración: " + duracion2 + " minutos \n");
-                System.out.println("\nCalificación: " + calificacion2 + " estrellas\n");
+                System.out.println("\nCalificación: " + calificacion2 + "estrellas\n");
                 System.out.println("\n" + disponibilidad2 + "\n");
                 System.out.println("\nClasificación: " + clasificacion2 + "\n");
                 int descuento2 = 2025 - estreno2;
@@ -90,11 +90,11 @@ public class Practica {
                     precioFinal2 = precioRenta2 * pago;
                     System.out.println("\nPrecio de renta: $" + precioFinal2 + "\n");
                 }
-                if (edadUsuario >= 12) {
+                if (edadUsuario >= 13) {
                     System.out.println("Disfruta la película\n");
                 } else {
                     System.out.println("\nNo tienes la edad suficiente para ver esta película");
-                    int b = 12 - edadUsuario;
+                    int b = 13 - edadUsuario;
                     System.out.println("Podras rentarla en " + b + " años\n");
                 }
 
@@ -111,7 +111,7 @@ public class Practica {
                 System.out.println("\nTítulo: " + pelicula3 + "\n");
                 System.out.println("\nAño de estreno: " + estreno3 + "\n");
                 System.out.println("\nDuración: " + duracion3 + " minutos \n");
-                System.out.println("\nCalificación: " + calificacion3 + " estrellas\n");
+                System.out.println("\nCalificación: " + calificacion3 + "estrella\n");
                 System.out.println("\n" + disponibilidad3 + "\n");
                 System.out.println("\nClasificación: " + clasificacion3 + "\n");
                 int descuento3 = 2025 - estreno3;
