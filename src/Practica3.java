@@ -43,6 +43,9 @@ public class Practica3 {
                 System.out.println("\nTítulo: " + pelicula1 + "\n");
                 System.out.println("\nAño de estreno: " + estreno1 + "\n");
                 System.out.println("\nDuración: " + duracion1 + " minutos \n");
+                System.out.println("\nCalificación: " + calificacion1 + "estrella\n");
+                System.out.println("\nClasificaicón: " + clasificacion1 + "\n");
+                System.out.println("\n" + disponibilidad + "\n");
                 int descuento = 2025 - estreno1;
                 double precioFinal = 0.0;
                 if (descuento >= 10) {
@@ -51,14 +54,16 @@ public class Practica3 {
                 } else {
                     precioFinal = precioRenta1 * pago;
                     System.out.println("\nPrecio de renta: $" + precioFinal + "\n");
-                System.out.println("\nCalificación: " + calificacion1 + " estrellas\n");
-                System.out.println("\n" + disponibilidad + "\n");
                 if (edadUsuario >= 18) {
-                    System.out.println("\nClasificación: " + clasificacion1 + );
                     System.out.println("Disfruta la película\n");
                 } else {
-                    System.out.println("\nNo tienes la edad suficiente para ver esta película\n");
+                    System.out.println("\nNo tienes la edad suficiente para ver esta película");
+                    int a = 18 - edadUsuario;
+                    System.out.println("Podras rentarla en " + a + " años\n");
                 }
+
+                break;
+
             case 2:
                 String pelicula2 = "Superman";
                 int estreno2 = 2025;
@@ -67,6 +72,29 @@ public class Practica3 {
                 int calificacion2 = 4;
                 String disponibilidad2 = "La pelicula no está disponible\n";
                 String clasificacion2 = "B";
+                System.out.println("\nTítulo: " + pelicula2 + "\n");
+                System.out.println("\nAño de estreno: " + estreno2 + "\n");
+                System.out.println("\nDuración: " + duracion2 + " minutos \n");
+                System.out.println("\nCalificación: " + calificacion2 + "estrella\n");
+                System.out.println("\n" + disponibilidad2 + "\n");
+                System.out.println("\nClasificaicón: " + clasificacion2 + "\n");
+                int descuento2 = 2025 - estreno2;
+                double precioFinal2 = 0.0;
+                if (descuento2 >= 10) {
+                    precioFinal2 = precioRenta2 * 0.9 * pago;        
+                    System.out.println("\nPrecio de renta con descuento: $" + precioFinal2 + "\n");
+                } else {
+                    precioFinal2 = precioRenta2 * pago;
+                    System.out.println("\nPrecio de renta: $" + precioFinal2 + "\n");
+                System.out.println("\nCalificación: " + calificacion2 + " estrellas\n");
+                if (edadUsuario >= 13) {
+                    System.out.println("Disfruta la película\n");
+                } else {
+                    System.out.println("\nNo tienes la edad suficiente para ver esta película");
+                    int b = 13 - edadUsuario;
+                    System.out.println("Podras rentarla en " + b + " años\n");
+                }
+
                 break;
             case 3:
                 String pelicula3 = "Sherk";
@@ -76,10 +104,32 @@ public class Practica3 {
                 int calificacion3 = 3;
                 String disponibilidad3 = "La pelicula está disponible\n";
                 String clasificacion3 = "A";
+
+                System.out.println("\nTítulo: " + pelicula3 + "\n");
+                System.out.println("\nAño de estreno: " + estreno3 + "\n");
+                System.out.println("\nDuración: " + duracion3 + " minutos \n");
+                System.out.println("\nCalificación: " + calificacion3 + "estrella\n");
+                System.out.println("\n" + disponibilidad3 + "\n");
+                System.out.println("\nClasificaicón: " + clasificacion3 + "\n");
+                int descuento3 = 2025 - estreno3;
+                double precioFinal3 = 0.0;
+                if (descuento3 >= 10) {
+                    precioFinal3 = precioRenta3 * 0.9 * pago;        
+                    System.out.println("\nPrecio de renta con descuento: $" + precioFinal3 + "\n");
+                } else {
+                    precioFinal3 = precioRenta3 * pago;
+                    System.out.println("\nPrecio de renta: $" + precioFinal3 + "\n");
+                if (edadUsuario >= 0) {
+                    System.out.println("Disfruta la película\n");
+                } else {
+                    System.out.println("\nNo tienes la edad suficiente para ver esta película");
+                    int c = 0 - edadUsuario;
+                    System.out.println("Podras rentarla en " + c + " años\n");
+                }
                 break;
 
         
-            default:
+            default: System.out.println("Opción no válida\n");
                 break;
         }
     }
