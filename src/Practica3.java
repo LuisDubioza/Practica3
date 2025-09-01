@@ -90,9 +90,9 @@ public class Practica3 {
                     int calificacion2 = 4;
                     String disponibilidad2 = "La pelicula no está disponible";
                     String clasificacion2 = "B";
-                    System.out.println(ROJ + "Título: " + pelicula2 + "\n" + Reset);
+                    System.out.println(ROJ + "\nTítulo: " + pelicula2 + "\n" + Reset);
                     System.out.println(NAR + "Año de estreno: " + estreno2 + "\n" + Reset);
-                    System.out.println(BLA + "Precio sin descuento ni  IVA: $" + precioRenta2 + "\n" + Reset);
+                    System.out.println(BLA + "Precio sin descuento ni IVA: $" + precioRenta2 + "\n" + Reset);
                     System.out.println(AZ + "Duración: " + duracion2 + " minutos \n" + Reset);
                     System.out.println(AMA + "Calificación: " + calificacion2 + " estrellas\n" + Reset);
                     System.out.println(MAG + disponibilidad2 + "\n" + Reset);
@@ -124,9 +124,9 @@ public class Practica3 {
                     String disponibilidad3 = "La pelicula está disponible";
                     String clasificacion3 = "A";
 
-                    System.out.println(ROJ + "Título: " + pelicula3 + "\n" + Reset);
+                    System.out.println(ROJ + "\nTítulo: " + pelicula3 + "\n" + Reset);
                     System.out.println(NAR + "Año de estreno: " + estreno3 + "\n" + Reset);
-                    System.out.println(BLA + "Precio sin descuento ni  IVA: $" + precioRenta3 + "\n" + Reset);
+                    System.out.println(BLA + "Precio sin descuento ni IVA: $" + precioRenta3 + "\n" + Reset);
                     System.out.println(AZ + "Duración: " + duracion3 + " minutos \n" + Reset);
                     System.out.println(AMA + "Calificación: " + calificacion3 + " estrellas\n" + Reset);
                     System.out.println(MAG + disponibilidad3 + "\n" + Reset);
